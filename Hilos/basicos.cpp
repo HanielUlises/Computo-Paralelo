@@ -19,6 +19,8 @@ void log_acciones(std::string nombre){
 }
 
 int main (){
+    // Al crear un objeto tipo nodo, pasamos al constructor una función junto
+    // a los argumentos correspondientes para invocar tal función
     std::thread agente_1(log_acciones, "Agente 1");
     std::thread agente_2(log_acciones, "Agente 2");
 
